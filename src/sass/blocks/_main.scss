@@ -1,10 +1,10 @@
 .main {
-	height: 785px;
+	height: $base * 196;
 }
 
 .header {
-	max-height: 85px;
-	padding: 19px 0;
+	max-height: $base*212;
+	padding: $base*5 0;
 	display: flex;
 	justify-content: space-between;
 
@@ -14,20 +14,23 @@
 		flex-basis: 20%;
 
 		&-flag {
-			width: 31px;
-			height: 21px;
+			width: $base*8;
+			height: $base*5;
+			img {
+				width: 100%;
+			}
 		}
 
 		&-address {
-			margin-left: 9px;
+			margin-left: $base*2;
 			text-align: left;
-			font-size: 12px;
-			font-weight: 300;
+			font-size: $base*3;
+			font-weight: $fw-light;
 
 			span {
-				font-size: 14px;
-				line-height: 18px;
-				font-weight: 700;
+				font-size: $base*3;
+				line-height: $base*4;
+				font-weight: $fw-bold;
 				color: #242424;
 			}
 		}
@@ -35,34 +38,40 @@
 }
 
 .main__wrapper {
-	height: 700px;
 
 	&-item {
-		height: 100%;
-
 		&-head {
-			padding-top: 39px;
-			height: 104px;
+			padding-top: $base * 10;
+			height: $base * 26;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-
+			&-logo {
+				width: $base*35;
+				img {
+					width: 100%;
+				}
+			}
 			&-nav {
-				width: 540px;
+				width: $base * 135;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 
 				&-link {
-
-					//flex-basis: 20%;
 					a {
-						font-size: 13px;
-						line-height: 26px;
-						font-weight: 700;
+						font-size: $base*3;
+						line-height: $base*6;
+						font-weight: $fw-bold;
 						text-transform: uppercase;
 						color: #ffffff;
 						text-decoration: none;
+					}
+					&_active {
+						a {
+							font-weight: $fw-bold;
+							color: #046278;
+						}
 					}
 				}
 
@@ -70,7 +79,7 @@
 		}
 
 		&-body {
-			margin-top: 27px;
+			margin-top: $base*7;
 			display: flex;
 
 		}
@@ -89,34 +98,34 @@
 		}
 
 		&-subtitle {
-			margin-top: 27px;
+			margin-top: $base*7;
 		}
 
 		&-btn {
-			margin-top: 39px;
+			margin-top: $base*10;
 		}
 	}
 
 	.slider {
 		display: flex;
 		align-items: center;
-		height: 11px;
+		height: $base*3;
 		position: absolute;
-		bottom: 68px;
+		bottom: $base*17;
 		left: 50%;
 		transform: translateX(-50%);
 		
 		&-arrowPrev {
-			margin-right: 13px;
+			margin-right: $base*3;
 		}
 
 		&-dot {
-			width: 11px;
-			height: 11px;
+			width: $base*3;
+			height: $base*3;
 			border-radius: 100%;
 			border: 1px solid #fff;
 			&:not(:first-child) {
-				margin-left: 3px;
+				margin-left: $base;
 			}
 			&_active {
 				background-color: #fff;
@@ -124,7 +133,7 @@
 		}
 
 		&-arrowNext {
-			margin-left: 13px;
+			margin-left: $base*3;
 		}
 	}
 }

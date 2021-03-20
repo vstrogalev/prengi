@@ -20,43 +20,43 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 42px;
-    line-height: 48px;
-    font-weight: 900;
+    font-size: $base * 10;
+    line-height: $base * 12;
+    font-weight: $fw-xbold;
     color: #ffffff;
 }
 
 h2 {
-	font-size: 30px;
-	line-height: 35px;
-	font-weight: 900;
+	font-size: $base * 7;
+	line-height: $base * 9;
+	font-weight: $fw-xbold;
 	color: #ffffff;
 	text-align: center;
 }
 
 h3 {
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: 300;
+	font-size: $base * 6;
+	line-height: $base * 7;
+	font-weight: $fw-light;
 	color: #ffffff;
 }
 
 .container {
 	margin: 0 auto;
-	width: 1140px;
+	width: $base * 285;
 	position: relative;
 }
 
 .btn {
 	border: none;
 	border-radius: 2px;
-	width: 241px;
-	height: 60px;
-	background-color: #00c2f0;
+	width: $base * 60;
+	height: $base * 15;
+	background-color: $btns-color;
 	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.07);
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 700;
+	font-size: $base * 4;
+	line-height: $base * 7;
+	font-weight: $fw-bold;
 	text-transform: uppercase;
 	color: #ffffff;
 }
@@ -79,3 +79,5 @@ a {
 @import 'blocks/variants';
 @import 'blocks/start';
 @import 'blocks/footer';
+
+@import 'blocks/media';

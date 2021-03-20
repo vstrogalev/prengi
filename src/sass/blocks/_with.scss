@@ -1,26 +1,25 @@
 .with {
-    min-width: 896px;
-    padding: 80px 0;
+    padding: $base*20 0;
     &__bads, &__ok {
         display: flex;
         justify-content: space-around;
-        row-gap: 31px;
+        row-gap: $base * 8;
         &-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0 63px 36px 63px;
+            padding: 0 $base*16 $base*9 $base*16;
             position: relative;
-            width: 360px;
-            min-height: 255px;
+            width: $base * 90;
+            min-height: $base * 64;
             border: 1px solid #ececec;
         }
         &-descr {
-            font-size: 18px;
-            line-height: 26px;
-            font-weight: 300;
+            font-size: $base * 4;
+            line-height: $base * 7;
+            font-weight: $fw-light;
             text-align: center;
-            color: #393939;
+            color: $main-color;
         }
         &-sign {
             position: absolute;
@@ -31,8 +30,11 @@
         }
     }
     &__arrows {
-        margin-top: 50px;
+        margin-top: $base * 12;
         position: relative;
+        img {
+            width: 100%;
+        }
         &-1 {
             position: absolute;
             top: 0;
@@ -41,23 +43,23 @@
         }
         &-2 {
             position: absolute;
-            top: 22px;
+            top: $base * 5;
             left: 50%;
             transform: translateX(-50%);
         }
     }
-    &__titile {
-        margin-top: 155px;
-        font-size: 48px;
+    &__title {
+        margin-top: $base * 39;
+        font-size: $base * 12;
         text-align: center;
-        line-height: 30px;
-        font-weight: 700;
-        color: #393939;
+        line-height: $base * 7;
+        font-weight: $fw-bold;
+        color: $main-color;
     }
 }
 .with__ok {
-    margin-top: 31px;
+    margin-top: $base * 8;
     &-descr {
-    font-weight: 700;
+    font-weight: $fw-bold;
     }
 }

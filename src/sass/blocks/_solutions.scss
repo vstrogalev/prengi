@@ -1,57 +1,58 @@
 .solutions {
-    padding: 81px 0 61px 0;
-    min-height: 890px;
+    padding: $base*20 0 $base*15 0;
     background: url('../img/bg_2.jpg') center (center/cover) no-repeat;
     &__tabs {
-        margin: 25px auto 0 auto;
+        margin: $base*6 auto 0 auto;
         display: flex;
-        padding: 7px 0;
+        padding: $base*2 0;
         justify-content: center;
         align-items: center;
-        width: 843px;
-        height: 64px;
+        width: $base * 195;
+        height: $base * 16;
         border: 1px solid #ffffff;
     }
     &__tab {
-        height: 49px;
-        font-size: 14px;
-        line-height: 51px;
-        font-weight: 400;
-        padding: 0 25px;
+        height: $base * 12;
+        font-size: $base * 3;
+        line-height: $base * 12;
+        font-weight: $fw-normal;
+        padding: 0 $base*6;
         color: #ffffff;
+        cursor: pointer;
         & + & {
             border-left: 1px solid rgba(#fff, 0.2);
         }
         &_active {
-            font-weight: 700;
-            color: #00c2f0;
+            font-weight: $fw-bold;
+            color: $btns-color;
         }
     }
     &__tab-wrapper {
-        margin-top: 36px;
+        margin-top: $base * 9;
     }
     &__item {
         position: relative;
         &-slider {
-            width: 947px;
-            height: 560px;
             margin: 0 auto;
         }
         &-slide {
             display: flex;
             flex-direction: column;
+            img {width: 100%;}
         }
         &-prevArrow {
             position: absolute;
             top: 50%;
             left: 5%;
             transform: translateY(-50%);
+            img {width: 100%;}
         }
         &-nextArrow {
             position: absolute;
             top: 50%;
             right: 5%;
             transform: translateY(-50%);
+            img {width: 100%;}
         }
     }
 }

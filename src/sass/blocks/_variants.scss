@@ -1,5 +1,5 @@
 .variants {
-    height: 560px;
+    height: $base * 140;
     position: relative;
     &__wrapper {
         display: flex;
@@ -8,7 +8,7 @@
     }
     &__title {
         position: absolute;
-        top: 80px;
+        top: $base * 20;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -23,7 +23,7 @@
         flex-direction: column;
         justify-content: center;
         &-content {
-            margin-right: 83px;
+            margin-right: $base * 21;
             width: 60%;
             position: relative;
             display: flex;
@@ -31,19 +31,19 @@
             justify-content: flex-end;
         }
         &-title {
-            font-size: 30px;
-            line-height: 22px;
-            font-weight: 900;
+            font-size: $base * 7;
+            line-height: $base * 6;
+            font-weight: $fw-xbold;
             text-transform: uppercase;
             text-align: right;
             color: #ffffff;
             z-index: 2;
         }
         &-descr {
-            margin-top: 20px;
-            font-size: 18px;
-            line-height: 26px;
-            font-weight: 300;
+            margin-top: $base * 5;
+            font-size: $base * 4;
+            line-height: $base * 7;
+            font-weight: $fw-light;
             text-align: right;
             color: #ffffff;
             z-index: 2;
@@ -52,11 +52,11 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 167px;
-            height: 167px;
-            background-color: rgba(#00c2f0, 0.3);
+            width: $base * 42;
+            height: $base * 42;
+            background-color: rgba($btns-color, 0.3);
             z-index: 1;
-            right: -43px;
+            right: -$base*11;
             transition: all 0.5s;
             &:hover {
                 width: 0;
@@ -66,7 +66,7 @@
     &__right {
         background: url('../img/server.jpg') center (center/cover) no-repeat;
         &-content {
-            margin-left: 83px;
+            margin-left: $base * 21;
             justify-content: flex-start;
         }
         &-title {
@@ -76,7 +76,7 @@
             text-align: left;
         }
         &-box {
-            left: -43px;
+            left: -$base*11;
         }
     }
 }
