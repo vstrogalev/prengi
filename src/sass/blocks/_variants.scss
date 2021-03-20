@@ -1,0 +1,82 @@
+.variants {
+    height: 560px;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    &__title {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__left {
+        background: url('../img/cloud.jpg') center (center/cover) no-repeat;
+        background-color: rgba(#fff, 0.7);
+        align-items: flex-end;
+    }
+    &__left, &__right {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-content {
+            margin-right: 83px;
+            width: 60%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        &-title {
+            font-size: 30px;
+            line-height: 22px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: right;
+            color: #ffffff;
+            z-index: 2;
+        }
+        &-descr {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 300;
+            text-align: right;
+            color: #ffffff;
+            z-index: 2;
+        }
+        &-box {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 167px;
+            height: 167px;
+            background-color: rgba(#00c2f0, 0.3);
+            z-index: 1;
+            right: -43px;
+            transition: all 0.5s;
+            &:hover {
+                width: 0;
+            }
+        }
+    }
+    &__right {
+        background: url('../img/server.jpg') center (center/cover) no-repeat;
+        &-content {
+            margin-left: 83px;
+            justify-content: flex-start;
+        }
+        &-title {
+            text-align: left;
+        }
+        &-descr {
+            text-align: left;
+        }
+        &-box {
+            left: -43px;
+        }
+    }
+}
